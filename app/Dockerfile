@@ -7,11 +7,11 @@ RUN npm install --production
 
 COPY . .
 
-RUN addgroup -S dockernode && useradd -S appuser -G dockernode
+RUN addgroup -S dockernode && adduser -S appuser -G dockernode
 RUN chown -R appuser:dockernode /app
 
 USER appuser
 
-EXPOSE 3000
+EXPOSE 5000
 
-CMD ["npm", "server.js"]
+CMD ["node", "server.js"]
