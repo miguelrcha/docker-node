@@ -1,17 +1,13 @@
-FROM node:18-alpine
+FROM node:20-alpine
 
 WORKDIR /app
 
-COPY package*.json ./
-RUN npm install --production
+COPY package.json .
+
+RUN npm install
 
 COPY . .
 
-RUN addgroup -S dockernode && adduser -S appuser -G dockernode
-RUN chown -R appuser:dockernode /app
+USER node
 
-USER appuser
-
-EXPOSE 5000
-
-CMD ["node", "server.js"]
+CMD ["npm", "start"]

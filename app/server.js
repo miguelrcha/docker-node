@@ -1,19 +1,20 @@
-const express = require('express');
-const os = require('os');
+const express = require("express");
+const os = require("os");
+
 const app = express();
 const PORT = 5000;
 
-app.get('/', (req, res) => {
+app.get("/", (req, res) => {
   res.json({
-    disciplina: "Sistemas Operacionais - Containers",
-    aluno: process.env.ALUNO || "Seu Nome",
+    disciplina: "Sistemas Operacionais",
+    aluno: process.env.ALUNO,
     hostname: os.hostname(),
     plataforma: os.platform(),
     arquitetura: os.arch()
   });
 });
 
-app.get('/info', (req, res) => {
+app.get("/info", (req, res) => {
   res.json({
     pid: process.pid,
     uptime: Math.floor(process.uptime()),
@@ -22,6 +23,5 @@ app.get('/info', (req, res) => {
 });
 
 app.listen(PORT, () => {
-  console.log(`Server run in port ${PORT}`);
+  console.log(`Servidor executando na porta ${PORT}`);
 });
-

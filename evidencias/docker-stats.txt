@@ -1,0 +1,4 @@
+CONTAINER ID   NAME      CPU %     MEM USAGE / LIMIT     MEM %     NET I/O           BLOCK I/O       PIDS 
+c45d049aa661   nginx     0.00%     2.617MiB / 7.653GiB   0.03%     6.66kB / 5.42kB   0B / 12.3kB     2 
+76a4b0d6957b   app       0.00%     28.74MiB / 128MiB     22.45%    327kB / 24.5kB    0B / 4.1kB      18 
+23bccd1f2023   mysql     0.48%     361.1MiB / 7.653GiB   4.61%     2.13kB / 126B     131kB / 262MB   37 

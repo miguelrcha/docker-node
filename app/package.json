@@ -1,11 +1,12 @@
 {
-    "name": "docker-node",
-    "version": "1.0.0",
-    "main": "server.js",
-    "scripts": {
-        "start": "node server.js"
-    },
-    "dependencies": {
-        "express": "^4.18.1"
-    }
+  "name": "docker-node",
+  "version": "1.0.0",
+  "description": "Sistemas Operacionais - Containers",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.21.2"
+  }
 }

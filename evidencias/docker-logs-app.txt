@@ -1,0 +1,6 @@
+miguelrocha@MacBook-Air-de-miguel ~ % docker logs app
+
+> docker-node@1.0.0 start
+> node server.js
+
+Servidor executando na porta 5000
